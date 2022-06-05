@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-container {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #1a7ff8;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width: 22rem;
+  height: 10rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 2px solid #f6f6f6;
+  overflow: hidden;
+  margin: 0 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-header {
+  border-bottom: 1px solid #f6f6f6;
+  padding: 1rem 1.2rem;
+  background-color: #fbfbfb;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #343434;
+  margin: 0;
+}
+
+.label {
+  font-size: 0.8rem;
+  color: #343434;
+  margin: 0 0 0.3rem 0;
+}
+
+.card-body {
+  padding: 1rem 1.2rem;
+}
+
+input[type="text"] {
+  font-size: 0.9rem;
+  color: #343434;
+  border: 2px solid #f3f3f3;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+::placeholder {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #e8e8e8;
+}
+
+input:focus {
+  outline: none;
+}
+
+.text {
+  margin: 0;
+}
+
+.btn {
+  display: inline;
+  background-color: #1a7ff8;
+  border-radius: 0.7rem;
+  padding: 10px 20px;
+  margin-left: 0.5rem;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
 }
